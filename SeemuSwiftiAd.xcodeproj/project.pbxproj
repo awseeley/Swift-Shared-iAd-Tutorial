@@ -13,6 +13,14 @@
 		94759FE31A29BE0900235023 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94759FE21A29BE0900235023 /* Images.xcassets */; };
 		94759FE61A29BE0900235023 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94759FE41A29BE0900235023 /* LaunchScreen.xib */; };
 		94759FF21A29BE0900235023 /* SeemuSwiftiAdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94759FF11A29BE0900235023 /* SeemuSwiftiAdTests.swift */; };
+		94759FFC1A29C2B100235023 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94759FFB1A29C2B100235023 /* CoreGraphics.framework */; };
+		94759FFE1A29C2F000235023 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94759FFD1A29C2F000235023 /* iAd.framework */; };
+		9475A0001A29C2F800235023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94759FFF1A29C2F800235023 /* UIKit.framework */; };
+		9475A0021A29C33200235023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9475A0011A29C33200235023 /* Foundation.framework */; };
+		9475A0041A29DDB100235023 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475A0031A29DDB100235023 /* Cat.swift */; };
+		9475A0061A29DDC300235023 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475A0051A29DDC300235023 /* Dog.swift */; };
+		9475A0091A29E54B00235023 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475A0071A29E54B00235023 /* cat.png */; };
+		9475A00A1A29E54B00235023 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475A0081A29E54B00235023 /* dog.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 		94759FEB1A29BE0900235023 /* SeemuSwiftiAdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeemuSwiftiAdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94759FF01A29BE0900235023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94759FF11A29BE0900235023 /* SeemuSwiftiAdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeemuSwiftiAdTests.swift; sourceTree = "<group>"; };
+		94759FFB1A29C2B100235023 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		94759FFD1A29C2F000235023 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		94759FFF1A29C2F800235023 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9475A0011A29C33200235023 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9475A0031A29DDB100235023 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		9475A0051A29DDC300235023 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		9475A0071A29E54B00235023 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		9475A0081A29E54B00235023 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9475A0021A29C33200235023 /* Foundation.framework in Frameworks */,
+				9475A0001A29C2F800235023 /* UIKit.framework in Frameworks */,
+				94759FFE1A29C2F000235023 /* iAd.framework in Frameworks */,
+				94759FFC1A29C2B100235023 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +79,10 @@
 		94759FCD1A29BE0900235023 = {
 			isa = PBXGroup;
 			children = (
+				9475A0011A29C33200235023 /* Foundation.framework */,
+				94759FFF1A29C2F800235023 /* UIKit.framework */,
+				94759FFD1A29C2F000235023 /* iAd.framework */,
+				94759FFB1A29C2B100235023 /* CoreGraphics.framework */,
 				94759FD81A29BE0900235023 /* SeemuSwiftiAd */,
 				94759FEE1A29BE0900235023 /* SeemuSwiftiAdTests */,
 				94759FD71A29BE0900235023 /* Products */,
@@ -77,9 +101,13 @@
 		94759FD81A29BE0900235023 /* SeemuSwiftiAd */ = {
 			isa = PBXGroup;
 			children = (
+				9475A0071A29E54B00235023 /* cat.png */,
+				9475A0081A29E54B00235023 /* dog.png */,
 				94759FDB1A29BE0900235023 /* AppDelegate.swift */,
 				94759FDD1A29BE0900235023 /* ViewController.swift */,
 				94759FDF1A29BE0900235023 /* Main.storyboard */,
+				9475A0031A29DDB100235023 /* Cat.swift */,
+				9475A0051A29DDC300235023 /* Dog.swift */,
 				94759FE21A29BE0900235023 /* Images.xcassets */,
 				94759FE41A29BE0900235023 /* LaunchScreen.xib */,
 				94759FD91A29BE0900235023 /* Supporting Files */,
@@ -193,7 +221,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94759FE11A29BE0900235023 /* Main.storyboard in Resources */,
+				9475A00A1A29E54B00235023 /* dog.png in Resources */,
 				94759FE61A29BE0900235023 /* LaunchScreen.xib in Resources */,
+				9475A0091A29E54B00235023 /* cat.png in Resources */,
 				94759FE31A29BE0900235023 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +244,8 @@
 			files = (
 				94759FDE1A29BE0900235023 /* ViewController.swift in Sources */,
 				94759FDC1A29BE0900235023 /* AppDelegate.swift in Sources */,
+				9475A0061A29DDC300235023 /* Dog.swift in Sources */,
+				9475A0041A29DDB100235023 /* Cat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
