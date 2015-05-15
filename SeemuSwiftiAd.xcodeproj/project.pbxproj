@@ -17,10 +17,11 @@
 		94759FFE1A29C2F000235023 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94759FFD1A29C2F000235023 /* iAd.framework */; };
 		9475A0001A29C2F800235023 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94759FFF1A29C2F800235023 /* UIKit.framework */; };
 		9475A0021A29C33200235023 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9475A0011A29C33200235023 /* Foundation.framework */; };
-		9475A0041A29DDB100235023 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475A0031A29DDB100235023 /* Cat.swift */; };
-		9475A0061A29DDC300235023 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475A0051A29DDC300235023 /* Dog.swift */; };
+		9475A0041A29DDB100235023 /* cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475A0031A29DDB100235023 /* cat.swift */; };
+		9475A0061A29DDC300235023 /* dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9475A0051A29DDC300235023 /* dog.swift */; };
 		9475A0091A29E54B00235023 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475A0071A29E54B00235023 /* cat.png */; };
 		9475A00A1A29E54B00235023 /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 9475A0081A29E54B00235023 /* dog.png */; };
+		94FF71C91A5BD656007A5386 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF71C81A5BD656007A5386 /* testViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +49,11 @@
 		94759FFD1A29C2F000235023 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		94759FFF1A29C2F800235023 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9475A0011A29C33200235023 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		9475A0031A29DDB100235023 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
-		9475A0051A29DDC300235023 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		9475A0031A29DDB100235023 /* cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cat.swift; sourceTree = "<group>"; };
+		9475A0051A29DDC300235023 /* dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dog.swift; sourceTree = "<group>"; };
 		9475A0071A29E54B00235023 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		9475A0081A29E54B00235023 /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		94FF71C81A5BD656007A5386 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +107,10 @@
 				9475A0081A29E54B00235023 /* dog.png */,
 				94759FDB1A29BE0900235023 /* AppDelegate.swift */,
 				94759FDD1A29BE0900235023 /* ViewController.swift */,
+				94FF71C81A5BD656007A5386 /* testViewController.swift */,
 				94759FDF1A29BE0900235023 /* Main.storyboard */,
-				9475A0031A29DDB100235023 /* Cat.swift */,
-				9475A0051A29DDC300235023 /* Dog.swift */,
+				9475A0031A29DDB100235023 /* cat.swift */,
+				9475A0051A29DDC300235023 /* dog.swift */,
 				94759FE21A29BE0900235023 /* Images.xcassets */,
 				94759FE41A29BE0900235023 /* LaunchScreen.xib */,
 				94759FD91A29BE0900235023 /* Supporting Files */,
@@ -189,6 +192,7 @@
 				TargetAttributes = {
 					94759FD51A29BE0900235023 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = XLDG57CC7V;
 					};
 					94759FEA1A29BE0900235023 = {
 						CreatedOnToolsVersion = 6.0;
@@ -244,8 +248,9 @@
 			files = (
 				94759FDE1A29BE0900235023 /* ViewController.swift in Sources */,
 				94759FDC1A29BE0900235023 /* AppDelegate.swift in Sources */,
-				9475A0061A29DDC300235023 /* Dog.swift in Sources */,
-				9475A0041A29DDB100235023 /* Cat.swift in Sources */,
+				9475A0061A29DDC300235023 /* dog.swift in Sources */,
+				94FF71C91A5BD656007A5386 /* testViewController.swift in Sources */,
+				9475A0041A29DDB100235023 /* cat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +376,7 @@
 				INFOPLIST_FILE = SeemuSwiftiAd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -381,6 +387,7 @@
 				INFOPLIST_FILE = SeemuSwiftiAd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -437,6 +444,7 @@
 				94759FF71A29BE0900235023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94759FF81A29BE0900235023 /* Build configuration list for PBXNativeTarget "SeemuSwiftiAdTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +453,7 @@
 				94759FFA1A29BE0900235023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

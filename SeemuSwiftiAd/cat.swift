@@ -1,60 +1,40 @@
 //
-//  ViewController.swift
+//  Cat.swift
 //  SeemuSwiftiAd
 
 
 import UIKit
 import iAd
 
-class ViewController: UIViewController, ADBannerViewDelegate {
-
+class Cat: UIViewController, ADBannerViewDelegate {
+    
     var UIiAd: ADBannerView = ADBannerView()
     
-    
-     var SH = UIScreen.mainScreen().bounds.height
-    var BV: CGFloat = 0
-    
-    // 1
     func appdelegate() -> AppDelegate {
         return UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
-    // 2
     override func viewWillAppear(animated: Bool) {
-       println("Showing ad")
-        BV = UIiAd.bounds.height
-        
         UIiAd.delegate = self
         UIiAd = self.appdelegate().UIiAd
-        UIiAd.frame = CGRectMake(0, SH - BV, 0, 0)
-        self.view.addSubview(UIiAd)
-
-        
+        UIiAd.frame = CGRectMake(0, 21, 0, 0)
         self.view.addSubview(UIiAd)
     }
     
-    // 3
     override func viewWillDisappear(animated: Bool) {
         UIiAd.delegate = nil
         //UIiAd = nil
         UIiAd.removeFromSuperview()
     }
     
-    // 4
     func bannerViewDidLoadAd(banner: ADBannerView!) {
-        println("ad loaded")
-        UIiAd.frame = CGRectMake(0, SH + 50, 0, 0)
-        
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(1)
         UIiAd.alpha = 1
-        UIiAd.frame = CGRectMake(0, SH - 50, 0, 0)
         UIView.commitAnimations()
     }
     
-    // 5
     func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        println("failed to receive ad")
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(0)
         UIiAd.alpha = 1
@@ -64,7 +44,8 @@ class ViewController: UIViewController, ADBannerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,8 +53,15 @@ class ViewController: UIViewController, ADBannerViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
-

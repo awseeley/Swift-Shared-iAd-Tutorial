@@ -11,7 +11,7 @@ class Dog: UIViewController, ADBannerViewDelegate {
     var UIiAd: ADBannerView = ADBannerView()
     
     func appdelegate() -> AppDelegate {
-        return UIApplication.sharedApplication().delegate as AppDelegate
+        return UIApplication.sharedApplication().delegate as! AppDelegate
     }
     
     override func viewWillAppear(animated: Bool) {
