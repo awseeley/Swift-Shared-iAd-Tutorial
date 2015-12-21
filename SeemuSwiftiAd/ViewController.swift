@@ -21,7 +21,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
     
     // 2
     override func viewWillAppear(animated: Bool) {
-       println("Showing ad")
+        print("Showing ad")
         BV = UIiAd.bounds.height
         
         UIiAd.delegate = self
@@ -42,7 +42,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
     
     // 4
     func bannerViewDidLoadAd(banner: ADBannerView!) {
-        println("ad loaded")
+        print("ad loaded")
         UIiAd.frame = CGRectMake(0, SH + 50, 0, 0)
         
         UIView.beginAnimations(nil, context: nil)
@@ -54,7 +54,7 @@ class ViewController: UIViewController, ADBannerViewDelegate {
     
     // 5
     func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        println("failed to receive ad")
+        print("failed to receive ad")
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(0)
         UIiAd.alpha = 1

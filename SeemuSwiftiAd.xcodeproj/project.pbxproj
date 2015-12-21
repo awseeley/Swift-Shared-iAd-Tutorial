@@ -187,6 +187,7 @@
 		94759FCE1A29BE0900235023 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Seemu;
 				TargetAttributes = {
